@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.topo {
+  margin: 0px;
+  height: 100%; /* ALTURA DA IMAGEM DENTRO DA SECTION */
+  background-size: cover; /* COBRIR A LATERAL TODA */
+  background-position: center; /* MANTER NO MEIO */
+  background-repeat: no-repeat; /* NAO REPETIRA  IMAGEM CASO O SITE PASSE A RESOLUÇÃO QUE A IMGEM TEM */
+}
+.topo img {
+  width: 100%;
+}

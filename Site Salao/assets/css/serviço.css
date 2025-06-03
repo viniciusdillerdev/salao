@@ -1,0 +1,173 @@
+.parte-serviço {
+  background-image: url("../imgs/Background.png");
+  background-size: cover; /* COBRIR A LATERAL TODA */
+  background-position: center; /* MANTER NO MEIO */
+  background-repeat: no-repeat; /* NAO REPETIRA  IMAGEM CASO O SITE PASSE A RESOLUÇÃO QUE A IMGEM TEM */
+  margin: 0;
+}
+
+.titulo-serviço {
+  font-family: "Playfair Display", serif;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.titulo-serviço h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: #636363;
+}
+
+.titulo-serviço span {
+  padding-left: 120px;
+  padding-right: 120px;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #636363;
+}
+
+.serviços {
+  padding-right: 80px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ListaServiço {
+  width: 60%;
+  list-style: none;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  color: #636363;
+  font-family: "Playfair Display", serif;
+}
+
+.div-nomes {
+  border-top: solid 0.1px gray;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Pe {
+  /*    ESSE É O ULTIMO ELEMENTO DA LISTA CRIAMOS UMA LINHA EM BAIXO     */
+  border-bottom: 0.1px solid gray;
+  font-size: 25px;
+}
+
+.serviços {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-top: 16px;
+  padding-bottom: 35px;
+}
+
+#TxtCabelo p,
+#TxtCilios p,
+#TxtDepilaçao p,
+#TxtEstetica p,
+#TxtPe p {
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 1%;
+  color: #636363;
+}
+.expanded {
+  height: auto; /* Deixa a altura automática quando expandido */
+}
+.titulo-nome-serviço {
+  font-weight: bold;
+}
+
+.serviços button {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+}
+.seta-icon {
+  transition: transform 0.3s ease;
+}
+
+.seta-rotacionada {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 800px) {
+  .div-nomes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .div-nomes .titulo-nome-serviço {
+    font-size: 18px;
+    flex-grow: 1;
+    word-break: break-word;
+  }
+
+  .div-nomes button {
+    width: 24px;
+    height: 24px;
+    font-size: 20px; /* Essencial para aparecer a seta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 10px;
+  }
+  .titulo-serviço h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .titulo-serviço span {
+    font-size: 18px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .ListaServiço {
+    padding-left: 45px;
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto; /* centraliza horizontalmente */
+  }
+
+  .Pe {
+    font-size: 18px;
+  }
+
+  #TxtCabelo p,
+  #TxtCilios p,
+  #TxtDepilaçao p,
+  #TxtEstetica p,
+  #TxtPe p {
+    font-size: 14px;
+    padding-left: 4%;
+  }
+}

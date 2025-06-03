@@ -1,0 +1,186 @@
+.depoimento {
+  height: 70dvh;
+  background-image: url("../imgs/Background.png");
+  background-size: cover; /* COBRIR A LATERAL TODA */
+  background-position: center; /* MANTER NO MEIO */
+  background-repeat: no-repeat; /* NAO REPETIR A IMAGEM CASO O SITE PASSE A RESOLUÇÃO QUE A IMGEM TEM */
+  padding-right: 0px;
+}
+
+.titulo-depoimento {
+  display: flex;
+  font-size: 42px;
+  font-family: "Cormorant Garamond", serif;
+  color: #636363;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  margin: 0;
+}
+/* Estilos para a lista de cartões */
+.lista-cartoes {
+  display: grid;
+  grid-template-columns: repeat(2, max-content); /* usa o tamanho dos cartões */
+  gap: 60px 100px; /* espaço entre linhas e colunas */
+  justify-content: center; /* centraliza o grid inteiro */
+  padding-left: 0;
+  margin-left: 0;
+  padding-top: 60px;
+}
+/* Dentro do href */
+.card-depoimento {
+  text-decoration: none;
+  color: #636363;
+}
+.card-depoimento :hover {
+  text-decoration: solid;
+  color: #636363;
+}
+
+/* Estilos para cada item de cartão */
+.cartao {
+  background: linear-gradient(
+    to bottom left,
+    #ff9a9a1c,
+    #ffc3c3
+  ); /* Cor de fundo dos cartões */
+  border: 1px solid gray; /* Borda cinza em torno dos cartões */
+  padding-bottom: 25px; /* Padding interno de 30px */
+  padding-top: 40px; /* Padding extra no topo de 40px */
+  width: 100%; /* Largura dos cartões */
+  height: 60px; /* Altura dos cartões */
+  display: flex; /* Flexbox para organizar o conteúdo dentro dos cartões */
+  gap: 12px; /* Espaçamento entre os itens do cartão */
+  align-items: center; /* Alinha os itens ao centro horizontalmente */
+  justify-content: flex-start; /* garante que imagem e texto alinhem à esquerda */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Sombra para os cartões */
+  border-radius: 12px; /* Bordas arredondadas */
+  gap: 5px; /* Espaçamento entre os itens */
+  transition: transform 0.3s ease; /* Transição suave para transformações */
+  text-decoration: none;
+}
+
+.cartao img {
+  margin-left: 30px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  flex: none; /* <- isso impede que a imagem seja redimensionada ou empurrada */
+}
+
+.texto-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 600px; /* Ajuste esse valor conforme o layout do seu cartão */
+  flex: 1; /* <- isso permite que o texto ocupe o espaço restante */
+}
+
+.titulo-terceario {
+  padding-bottom: 0px;
+  font-size: 20px;
+  font-family: "Lora", serif;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+/* Estilo para os parágrafos dentro dos cartões */
+.paragrafo-menor {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Efeito de aumento ao passar o mouse sobre o cartão */
+.cartao:hover {
+  cursor: pointer;
+  transform: scale(
+    1.05
+  ); /* Aumenta o cartão em 5% quando o mouse passa sobre ele */
+}
+
+@media (max-width: 1500px) {
+  .depoimento {
+    height: 40dvh;
+    padding-bottom: 80px;
+  }
+
+  .titulo-depoimento {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  .lista-cartoes {
+    grid-template-columns: 1fr; /* Apenas uma coluna no grid */
+    gap: 30px; /* Espaço entre os cartões */
+    padding: 20px; /* Espaçamento interno nas bordas evita que o conteúdo encoste nas bordas do celular.      */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cartao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    padding-top: 10px;
+    height: auto; /* permite crescer */
+    box-sizing: border-box;
+  }
+
+  .cartao img {
+    margin: 0 auto 10px auto; /* Centraliza a imagem e dá um espaçamento abaixo */
+    height: 45px;
+    width: 45px;
+  }
+
+  .texto-card {
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    max-width: 80%;
+    margin: 0;
+  }
+
+  .titulo-terceario {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .paragrafo-menor {
+    font-size: 16px;
+    padding: 0;
+    margin-top: 5px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 850px) {
+  .depoimento {
+    height: 45dvh;
+  }
+}
+
+@media (max-width: 550px) {
+  .depoimento {
+    height: 45dvh;
+  }
+}
+
+@media (max-width: 400px) {
+  .depoimento {
+    height: 40dvh;
+  }
+}
+@media (max-width: 375px) {
+  .depoimento {
+    height: 48dvh;
+  }
+}
