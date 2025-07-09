@@ -1,10 +1,12 @@
 .depoimento {
-  height: 70dvh;
+  /* A ALTURA FIXA FOI REMOVIDA DAQUI */
   background-image: url("../imgs/Background.png");
   background-size: cover; /* COBRIR A LATERAL TODA */
   background-position: center; /* MANTER NO MEIO */
   background-repeat: no-repeat; /* NAO REPETIR A IMAGEM CASO O SITE PASSE A RESOLUÇÃO QUE A IMGEM TEM */
   padding-right: 0px;
+  /* ADICIONADO PADDING ABAIXO PARA GARANTIR ESPAÇAMENTO */
+  padding-bottom: 80px;
 }
 
 .titulo-depoimento {
@@ -39,11 +41,7 @@
 
 /* Estilos para cada item de cartão */
 .cartao {
-  background: linear-gradient(
-    to bottom left,
-    #ff9a9a1c,
-    #ffc3c3
-  ); /* Cor de fundo dos cartões */
+  background: linear-gradient(to bottom left, #ff9a9a1c, #ffc3c3); /* Cor de fundo dos cartões */
   border: 1px solid gray; /* Borda cinza em torno dos cartões */
   padding-bottom: 25px; /* Padding interno de 30px */
   padding-top: 40px; /* Padding extra no topo de 40px */
@@ -98,15 +96,13 @@
 /* Efeito de aumento ao passar o mouse sobre o cartão */
 .cartao:hover {
   cursor: pointer;
-  transform: scale(
-    1.05
-  ); /* Aumenta o cartão em 5% quando o mouse passa sobre ele */
+  transform: scale(1.05); /* Aumenta o cartão em 5% quando o mouse passa sobre ele */
 }
 
 @media (max-width: 1500px) {
   .depoimento {
-    height: 40dvh;
-    padding-bottom: 80px;
+    /* A ALTURA FIXA FOI REMOVIDA DAQUI TAMBÉM */
+    padding-bottom: 80px; /* padding-bottom mantido para garantir espaço */
   }
 
   .titulo-depoimento {
@@ -128,20 +124,19 @@
     justify-content: flex-start;
     width: 100%;
     max-width: 100%;
-    padding: 0px;
-    padding-top: 10px;
+    padding: 10px; /* Padding simplificado */
     height: auto; /* permite crescer */
     box-sizing: border-box;
   }
 
   .cartao img {
-    margin: 0 auto 10px auto; /* Centraliza a imagem e dá um espaçamento abaixo */
+    margin: 0 10px 0 0; /* Ajusta a margem para alinhar à esquerda */
     height: 45px;
     width: 45px;
   }
 
   .texto-card {
-    align-items: center;
+    align-items: flex-start; /* Alinha o texto à esquerda */
     justify-content: center;
     padding: 0px;
     max-width: 80%;
@@ -151,7 +146,7 @@
   .titulo-terceario {
     font-size: 18px;
     margin: 0;
-    text-align: center;
+    text-align: left; /* Alinha o texto à esquerda */
   }
 
   .paragrafo-menor {
@@ -162,25 +157,10 @@
   }
 }
 
-@media (max-width: 850px) {
-  .depoimento {
-    height: 45dvh;
-  }
-}
+/* As media queries abaixo que só definiam a altura foram removidas pois não são mais necessárias */
 
 @media (max-width: 550px) {
-  .depoimento {
-    height: 45dvh;
-  }
-}
-
-@media (max-width: 400px) {
-  .depoimento {
-    height: 40dvh;
-  }
-}
-@media (max-width: 375px) {
-  .depoimento {
-    height: 48dvh;
+  .lista-cartoes {
+    margin: 0;
   }
 }
