@@ -75,10 +75,54 @@
   padding-bottom: 35px;
 }
 
-#TxtCabelo p,
-#TxtCilios p,
-#TxtDepilaçao p,
-#TxtEstetica p,
+#TxtCabelo {
+  opacity: 0; /* Começa invisível */
+  height: 0; /* Começa com altura 0 */
+  overflow: hidden; /* Esconde o conteúdo que excede a altura */
+  transition: opacity 0.5s ease, height 0.5s ease; /* Transições suaves */
+}
+
+#TxtCabelo.expanded {
+  opacity: 1; /* Torna visível */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+#TxtCilios {
+  opacity: 0; /* Começa invisível */
+  height: 0; /* Começa com altura 0 */
+  overflow: hidden; /* Esconde o conteúdo que excede a altura */
+  transition: opacity 0.5s ease, height 0.5s ease; /* Transições suaves */
+}
+
+#TxtCilios.expanded {
+  opacity: 1; /* Torna visível */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+#TxtDepilacao {
+  opacity: 0; /* Começa invisível */
+  height: 0; /* Começa com altura 0 */
+  overflow: hidden; /* Esconde o conteúdo que excede a altura */
+  transition: opacity 0.5s ease, height 0.5s ease; /* Transições suaves */
+}
+
+#TxtDepilacao.expanded {
+  opacity: 1; /* Torna visível */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+#TxtEstetica {
+  opacity: 0; /* Começa invisível */
+  height: 0; /* Começa com altura 0 */
+  overflow: hidden; /* Esconde o conteúdo que excede a altura */
+  transition: opacity 0.5s ease, height 0.5s ease; /* Transições suaves */
+}
+
+#TxtEstetica.expanded {
+  opacity: 1; /* Torna visível */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
 #TxtPe p {
   font-family: "Open Sans", sans-serif;
   font-size: smaller;
@@ -87,6 +131,12 @@
   padding-left: 1%;
   color: #636363;
 }
+
+#TxtPe.expanded {
+  opacity: 1; /* Torna visível */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
 .expanded {
   height: auto; /* Deixa a altura automática quando expandido */
 }

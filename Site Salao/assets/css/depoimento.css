@@ -41,7 +41,11 @@
 
 /* Estilos para cada item de cartão */
 .cartao {
-  background: linear-gradient(to bottom left, #ff9a9a1c, #ffc3c3); /* Cor de fundo dos cartões */
+  background: linear-gradient(
+    to bottom left,
+    #ff9a9a1c,
+    #ffc3c3
+  ); /* Cor de fundo dos cartões */
   border: 1px solid gray; /* Borda cinza em torno dos cartões */
   padding-bottom: 25px; /* Padding interno de 30px */
   padding-top: 40px; /* Padding extra no topo de 40px */
@@ -96,7 +100,9 @@
 /* Efeito de aumento ao passar o mouse sobre o cartão */
 .cartao:hover {
   cursor: pointer;
-  transform: scale(1.05); /* Aumenta o cartão em 5% quando o mouse passa sobre ele */
+  transform: scale(
+    1.05
+  ); /* Aumenta o cartão em 5% quando o mouse passa sobre ele */
 }
 
 @media (max-width: 1500px) {

@@ -10,8 +10,10 @@ function MostrarTextoDepilaçao() {
   if (ElementoTexto.innerHTML === "") {
     ElementoTexto.innerHTML = "<p>" + texto + "</p>";
     seta.classList.add("seta-rotacionada");
+    elementoTexto.classList.add("expanded"); // Adiciona a classe para animar
   } else {
     ElementoTexto.innerHTML = "";
     seta.classList.remove("seta-rotacionada");
+    elementoTexto.classList.remove("expanded"); // Remove a classe para animar
   }
 }
